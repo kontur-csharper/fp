@@ -1,14 +1,20 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FileSenderRailway", "FileSenderRailway\FileSenderRailway.csproj", "{D979A1EA-516A-46BC-BE6C-8845CA10853D}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MyStem.Wrapper", "src\MyStem.Wrapper\MyStem.Wrapper.csproj", "{95855A99-572A-4081-A9FE-93F11764704E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ErrorHandling", "ErrorHandling\ErrorHandling.csproj", "{66FAF276-533D-4733-AB2E-A9905D678CF6}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MyStem.Wrapper.Tests", "src\MyStem.Wrapper.Tests\MyStem.Wrapper.Tests.csproj", "{AD6B0F09-E41F-4862-BEF8-F55C8FA77119}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConwaysGameOfLife", "ConwaysGameOfLife\ConwaysGameOfLife.csproj", "{2AC2EFE1-647B-4116-9D6E-EF99657C2AB6}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TagCloud.Core", "src\TagCloud.Core\TagCloud.Core.csproj", "{C3301D42-A0C5-4FDD-83E2-9D62C2D67378}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Samples", "Samples", "{754C1CC8-A8B6-46C6-B35C-8A43B80111A0}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TagCloud.Core.Tests", "src\TagCloud.Core.Tests\TagCloud.Core.Tests.csproj", "{DDC1248F-7795-4A1B-945F-BD28C0AA90B9}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Summator", "Summator\Summator.csproj", "{2E64584B-4FBC-4E7D-AEF2-003E8251307A}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TagCloud.Gui", "src\TagCloud.Gui\TagCloud.Gui.csproj", "{46F24892-7531-4D65-9820-138FA549FFB4}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tests", "Tests", "{AA760A9A-21FB-4B7B-A01F-F6CC6D822DEF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FunctionalStuff", "src\FunctionalStuff\FunctionalStuff.csproj", "{0E5E6CCE-CF0F-4883-8280-2B67A530B4BB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FunctionalStuff.TestingExtensions", "src\FunctionalStuff.TestingExtensions\FunctionalStuff.TestingExtensions.csproj", "{95C4BA85-374E-48A7-BD69-00178AC4008D}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -16,24 +22,37 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{D979A1EA-516A-46BC-BE6C-8845CA10853D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{D979A1EA-516A-46BC-BE6C-8845CA10853D}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{D979A1EA-516A-46BC-BE6C-8845CA10853D}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{D979A1EA-516A-46BC-BE6C-8845CA10853D}.Release|Any CPU.Build.0 = Release|Any CPU
-		{66FAF276-533D-4733-AB2E-A9905D678CF6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{66FAF276-533D-4733-AB2E-A9905D678CF6}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{66FAF276-533D-4733-AB2E-A9905D678CF6}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{66FAF276-533D-4733-AB2E-A9905D678CF6}.Release|Any CPU.Build.0 = Release|Any CPU
-		{2AC2EFE1-647B-4116-9D6E-EF99657C2AB6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{2AC2EFE1-647B-4116-9D6E-EF99657C2AB6}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{2AC2EFE1-647B-4116-9D6E-EF99657C2AB6}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{2AC2EFE1-647B-4116-9D6E-EF99657C2AB6}.Release|Any CPU.Build.0 = Release|Any CPU
-		{2E64584B-4FBC-4E7D-AEF2-003E8251307A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{2E64584B-4FBC-4E7D-AEF2-003E8251307A}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{2E64584B-4FBC-4E7D-AEF2-003E8251307A}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{2E64584B-4FBC-4E7D-AEF2-003E8251307A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{95855A99-572A-4081-A9FE-93F11764704E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{95855A99-572A-4081-A9FE-93F11764704E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{95855A99-572A-4081-A9FE-93F11764704E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{95855A99-572A-4081-A9FE-93F11764704E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AD6B0F09-E41F-4862-BEF8-F55C8FA77119}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AD6B0F09-E41F-4862-BEF8-F55C8FA77119}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AD6B0F09-E41F-4862-BEF8-F55C8FA77119}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AD6B0F09-E41F-4862-BEF8-F55C8FA77119}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C3301D42-A0C5-4FDD-83E2-9D62C2D67378}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C3301D42-A0C5-4FDD-83E2-9D62C2D67378}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C3301D42-A0C5-4FDD-83E2-9D62C2D67378}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C3301D42-A0C5-4FDD-83E2-9D62C2D67378}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DDC1248F-7795-4A1B-945F-BD28C0AA90B9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DDC1248F-7795-4A1B-945F-BD28C0AA90B9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DDC1248F-7795-4A1B-945F-BD28C0AA90B9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DDC1248F-7795-4A1B-945F-BD28C0AA90B9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{46F24892-7531-4D65-9820-138FA549FFB4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{46F24892-7531-4D65-9820-138FA549FFB4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{46F24892-7531-4D65-9820-138FA549FFB4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{46F24892-7531-4D65-9820-138FA549FFB4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0E5E6CCE-CF0F-4883-8280-2B67A530B4BB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0E5E6CCE-CF0F-4883-8280-2B67A530B4BB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0E5E6CCE-CF0F-4883-8280-2B67A530B4BB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0E5E6CCE-CF0F-4883-8280-2B67A530B4BB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{95C4BA85-374E-48A7-BD69-00178AC4008D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{95C4BA85-374E-48A7-BD69-00178AC4008D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{95C4BA85-374E-48A7-BD69-00178AC4008D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{95C4BA85-374E-48A7-BD69-00178AC4008D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
-		{2E64584B-4FBC-4E7D-AEF2-003E8251307A} = {754C1CC8-A8B6-46C6-B35C-8A43B80111A0}
+		{AD6B0F09-E41F-4862-BEF8-F55C8FA77119} = {AA760A9A-21FB-4B7B-A01F-F6CC6D822DEF}
+		{DDC1248F-7795-4A1B-945F-BD28C0AA90B9} = {AA760A9A-21FB-4B7B-A01F-F6CC6D822DEF}
 	EndGlobalSection
 EndGlobal

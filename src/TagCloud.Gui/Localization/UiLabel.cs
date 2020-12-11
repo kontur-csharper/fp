@@ -1,0 +1,29 @@
+﻿namespace TagCloud.Gui.Localization
+{
+    public enum UiLabel
+    {
+        FileReader,
+        FilteringMethod,
+        WritingMethod,
+        NormalizationMethod,
+        ResizingMethod,
+        TypeFilter,
+        SizeSource,
+        SourceFile,
+        FontFamily,
+        LayoutingAlgorithm,
+        LayoutingCenterOffset,
+        LayoutingRectDistance,
+        ImageSize,
+        BackgroundColor,
+        ColorPalette,
+        SpeechPart,
+        ImageFormat,
+        ButtonAdd,
+        ButtonRemove,
+        XPoint,
+        YPoint,
+        Width,
+        Height
+    }
+}
