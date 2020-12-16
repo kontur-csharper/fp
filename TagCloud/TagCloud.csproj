@@ -1,0 +1,41 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <OutputType>Exe</OutputType>
+        <TargetFramework>net48</TargetFramework>
+    </PropertyGroup>
+
+    <ItemGroup>
+      <PackageReference Include="DocumentFormat.OpenXml" Version="2.11.3" />
+      <PackageReference Include="FakeItEasy" Version="6.2.1" />
+      <PackageReference Include="FluentAssertions" Version="6.0.0-alpha0001" />
+      <PackageReference Include="McMaster.Extensions.CommandLineUtils" Version="3.1.0-rc.371" />
+      <PackageReference Include="Microsoft.Extensions.DependencyInjection" Version="5.0.0" />
+      <PackageReference Include="NUnit" Version="3.12.0" />
+      <PackageReference Include="System.Runtime.CompilerServices.Unsafe" Version="5.0.0" />
+      <PackageReference Include="WeCantSpell.Hunspell" Version="3.0.1" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <Compile Include="..\ErrorHandling\Solved\ParseResultExtensions.cs">
+        <Link>Solved\ParseResultExtensions.cs</Link>
+      </Compile>
+      <Compile Include="..\ErrorHandling\Solved\Result.cs">
+        <Link>Solved\Result.cs</Link>
+      </Compile>
+      <Compile Include="..\ErrorHandling\Solved\ResultQueryExpressionExtensions.cs">
+        <Link>Solved\ResultQueryExpressionExtensions.cs</Link>
+      </Compile>
+      <Compile Include="..\ErrorHandling\Solved\ResultQueryExpression_Should.cs">
+        <Link>Solved\ResultQueryExpression_Should.cs</Link>
+      </Compile>
+      <Compile Include="..\ErrorHandling\Solved\Result_Should.cs">
+        <Link>Solved\Result_Should.cs</Link>
+      </Compile>
+    </ItemGroup>
+
+    <ItemGroup>
+      <Folder Update="..\ErrorHandling\Solved" />
+    </ItemGroup>
+
+</Project>
