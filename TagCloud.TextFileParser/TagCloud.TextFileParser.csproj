@@ -1,0 +1,15 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <TargetFramework>netcoreapp3.1</TargetFramework>
+    </PropertyGroup>
+
+    <ItemGroup>
+      <PackageReference Include="GemBox.Document" Version="33.0.1049" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <ProjectReference Include="..\TagCloud.ExceptionHandler\TagCloud.ExceptionHandler.csproj" />
+    </ItemGroup>
+
+</Project>

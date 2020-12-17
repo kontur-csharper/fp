@@ -10,6 +10,20 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Samples", "Samples", "{754C
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Summator", "Summator\Summator.csproj", "{2E64584B-4FBC-4E7D-AEF2-003E8251307A}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TagCloud", "TagCloud\TagCloud.csproj", "{CEF43D38-8F91-439D-B3A7-13657AED168E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TagCloud.ExceptionHandler", "TagCloud.ExceptionHandler\TagCloud.ExceptionHandler.csproj", "{831F4235-2C58-4DCB-9C95-E5D8FDD3D12A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TagCloud.ImageSaver", "TagCloud.ImageSaver\TagCloud.ImageSaver.csproj", "{3E978781-3757-4F39-A613-1C1A3E47FE6C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TagCloud.Tests", "TagCloud.Tests\TagCloud.Tests.csproj", "{562F474E-C77E-4379-BE2E-6092F897C699}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TagCloud.TextFileParser", "TagCloud.TextFileParser\TagCloud.TextFileParser.csproj", "{6CF268FD-2DEF-4B41-96B2-FC9DBD7F014D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TagCloud.Visualizer", "TagCloud.Visualizer\TagCloud.Visualizer.csproj", "{BB880E85-0F07-4475-AAFC-9ACF7EC5648E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TagCloud.Visualizer.Console", "TagCloud.Visualizer.Console\TagCloud.Visualizer.Console.csproj", "{8F40E5AC-2AC8-4A6B-B68F-A8CCB16EFC0F}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -32,6 +46,34 @@ Global
 		{2E64584B-4FBC-4E7D-AEF2-003E8251307A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{2E64584B-4FBC-4E7D-AEF2-003E8251307A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{2E64584B-4FBC-4E7D-AEF2-003E8251307A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CEF43D38-8F91-439D-B3A7-13657AED168E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CEF43D38-8F91-439D-B3A7-13657AED168E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CEF43D38-8F91-439D-B3A7-13657AED168E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CEF43D38-8F91-439D-B3A7-13657AED168E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{831F4235-2C58-4DCB-9C95-E5D8FDD3D12A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{831F4235-2C58-4DCB-9C95-E5D8FDD3D12A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{831F4235-2C58-4DCB-9C95-E5D8FDD3D12A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{831F4235-2C58-4DCB-9C95-E5D8FDD3D12A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3E978781-3757-4F39-A613-1C1A3E47FE6C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3E978781-3757-4F39-A613-1C1A3E47FE6C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3E978781-3757-4F39-A613-1C1A3E47FE6C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3E978781-3757-4F39-A613-1C1A3E47FE6C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{562F474E-C77E-4379-BE2E-6092F897C699}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{562F474E-C77E-4379-BE2E-6092F897C699}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{562F474E-C77E-4379-BE2E-6092F897C699}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{562F474E-C77E-4379-BE2E-6092F897C699}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6CF268FD-2DEF-4B41-96B2-FC9DBD7F014D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6CF268FD-2DEF-4B41-96B2-FC9DBD7F014D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6CF268FD-2DEF-4B41-96B2-FC9DBD7F014D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6CF268FD-2DEF-4B41-96B2-FC9DBD7F014D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BB880E85-0F07-4475-AAFC-9ACF7EC5648E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BB880E85-0F07-4475-AAFC-9ACF7EC5648E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BB880E85-0F07-4475-AAFC-9ACF7EC5648E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BB880E85-0F07-4475-AAFC-9ACF7EC5648E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8F40E5AC-2AC8-4A6B-B68F-A8CCB16EFC0F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8F40E5AC-2AC8-4A6B-B68F-A8CCB16EFC0F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8F40E5AC-2AC8-4A6B-B68F-A8CCB16EFC0F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8F40E5AC-2AC8-4A6B-B68F-A8CCB16EFC0F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{2E64584B-4FBC-4E7D-AEF2-003E8251307A} = {754C1CC8-A8B6-46C6-B35C-8A43B80111A0}
