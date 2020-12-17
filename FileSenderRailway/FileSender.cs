@@ -7,8 +7,8 @@ namespace FileSenderRailway
     public class FileSender
     {
         private readonly ICryptographer cryptographer;
-        private readonly IRecognizer recognizer;
         private readonly Func<DateTime> now;
+        private readonly IRecognizer recognizer;
         private readonly ISender sender;
 
         public FileSender(
@@ -30,7 +30,7 @@ namespace FileSenderRailway
                 string errorMessage = null;
                 try
                 {
-                    Document doc = recognizer.Recognize(file);
+                    var doc = recognizer.Recognize(file);
                     if (!IsValidFormatVersion(doc))
                         throw new FormatException("Invalid format version");
                     if (!IsValidTimestamp(doc))
@@ -46,6 +46,7 @@ namespace FileSenderRailway
                 {
                     errorMessage = "Can't send. " + e.Message;
                 }
+
                 yield return new FileSendResult(file, errorMessage);
             }
         }

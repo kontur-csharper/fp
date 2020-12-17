@@ -197,3 +197,4 @@ FakesAssemblies/
 *.opt
 
 *Solved.cs
+.DS_Store

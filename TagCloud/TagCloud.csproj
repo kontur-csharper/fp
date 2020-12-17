@@ -1,0 +1,30 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <TargetFramework>net48</TargetFramework>
+        <LangVersion>8</LangVersion>
+    </PropertyGroup>
+
+    <ItemGroup>
+      <PackageReference Include="Autofac" Version="6.0.0" />
+      <PackageReference Include="GtkSharp" Version="3.22.25.128" />
+      <PackageReference Include="MyStemWrapper" Version="1.0.0" />
+    </ItemGroup>
+    
+    <ItemGroup>
+        <Content Include="bin\Release\**">
+            <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+        </Content>
+    </ItemGroup>
+    
+    <ItemGroup>
+      <Reference Include="System.Windows.Forms" />
+    </ItemGroup>
+    
+    <ItemGroup>
+      <EmbeddedResource Include="examples\input.txt">
+        <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      </EmbeddedResource>
+    </ItemGroup>
+
+</Project>
