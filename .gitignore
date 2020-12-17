@@ -197,3 +197,6 @@ FakesAssemblies/
 *.opt
 
 *Solved.cs
+
+# TagsCloud tests resources
+test.png
