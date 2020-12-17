@@ -197,3 +197,7 @@ FakesAssemblies/
 *.opt
 
 *Solved.cs
+/FileSenderRailway/*
+/ErrorHandling/*
+/ConwaysGameOfLife/*
+/Summator/*
