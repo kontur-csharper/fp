@@ -29,7 +29,7 @@ namespace FileSenderRailway
             cryptographer = A.Fake<ICryptographer>();
             sender = A.Fake<ISender>();
             recognizer = A.Fake<IRecognizer>();
-            fileSender = new FileSender(cryptographer, sender, recognizer, () => now);
+            fileSender = new FileSender(cryptographer.Sign, sender.Send, recognizer.Recognize, () => now);
         }
 
         [Test]
